@@ -1,0 +1,165 @@
+/* Reset default margin and padding */
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+/* Styling the header */
+header {
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+  min-height: 100px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Styling the main content */
+main {
+  margin: 20px;
+  flex: 1; /* Fill the remaining vertical space */
+}
+
+/* Styling the role descriptions */
+#role-description,
+#role-assignment,
+#guidelines-enforcement,
+#benefits-rewards {
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; /* Add animation effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#role-description h1,
+#role-assignment h1,
+#guidelines-enforcement h1,
+#benefits-rewards h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: darkred; /* Add color for better readability */
+}
+
+#role-description h3,
+#role-assignment h3,
+#guidelines-enforcement h3,
+#benefits-rewards h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: darkblue; /* Add color for better readability */
+}
+
+#role-description ul,
+#role-assignment ul,
+#guidelines-enforcement ul,
+#benefits-rewards ul {
+  margin-left: 10px;
+  list-style-type: disc;
+}
+
+#role-description li,
+#role-assignment li,
+#guidelines-enforcement li,
+#benefits-rewards li {
+  margin-bottom: 10px;
+}
+
+#contributors {
+  margin-top: 20px;
+  
+}
+
+#contributors li {
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contributors h3 {
+  font-size: 20px;
+  margin: 20px;
+  color: orange;
+  text-align: center;
+}
+
+#contributors ul {
+  margin-left: 10px;
+  list-style-type: none;
+  
+}
+#contributors ul li {
+  margin-bottom: 10px;
+  background-color: darkred;
+  color: ghostwhite;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+/* Styling the navigation menu */
+nav {
+  background-color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  border: 2px solid darkgrey;
+  background-color: darkred;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  height: 100%;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Styling the footer */
+footer {
+  background-color: black;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}

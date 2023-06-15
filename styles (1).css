@@ -1,0 +1,95 @@
+  .card-columns {
+    column-count: 1;
+  }
+
+  .assigned-role {
+    color: darkred;
+    font-weight: bolder;
+  }
+
+  .current-task {
+    color: darkblue;
+  }
+
+  header {
+    height: 25vh;
+  }
+
+  .logoicon {
+    padding: 0;
+    width: 20vw;
+    height: auto;
+    left: 0;
+  }
+
+  .logo {
+    width: 30vw;
+    align-items: center;
+    left: 0;
+    margin-right: auto; /* Align logos to the far left */
+  }
+
+  .navbar-toggler {
+    z-index: 1;
+  }
+
+  .container {
+    padding: 0;
+    /* Adjust the padding as needed */
+  }
+
+  /* Styling for the pop-up navigation */
+  .pop-up-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow-y: auto;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .pop-up-nav .navbar {
+    justify-content: left;
+    align-items: center;
+    padding-right: 50px;
+    width: 50vw;
+    height: 60vh;
+    margin-top: 25vh;
+    position: relative;
+    transform: translateY(0%);
+    background-color: #13213D;
+    border-radius: 10px;
+  }
+
+  /* Slide-down animation for the pop-up navigation */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Link styles */
+.nav-item {
+  width: 40vw;
+  color: #000; /* Set the default link color */
+  text-decoration: none; /* Remove underline */
+}
+.nav-item a{
+  max-width: 75%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Link styles when hovered */
+.nav-item a:hover {
+  color: red; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+

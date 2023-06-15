@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guidelines and Enforcement</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+
+
+</style>
+
+<header>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #13213D;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="logo">
+          <img src="/Obondiumicon.png" alt="Obondium" class="logoicon">
+          <img src="/Obondiumwhite.png" alt="Obondium" class="logo">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Add the pop-up navigation markup -->
+      <div class="pop-up-nav">
+        <div class="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Role Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="role-description.html">Role Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guidelines-enforcement.html">Guidelines and Enforcement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="benefits-rewards.html">Benefits and Rewards</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h2>Roles Assignment</h2>
+          <div class="card-columns mt-4" id="roles-assignment"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="row mt-5">
+      <div class="col">
+        <h2>Unassigned Roles</h2>
+        <div class="badge-container" id="unassigned-roles"></div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2023 Obondium Workspace. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const roleAssignment = [
+      {
+        name: "Charles",
+        specialization: "Frontend Development, Back-End Development, Quality Assurance",
+        assignedRoles: ["Front-End Developer", "Back-End Developer", "Quality Assurance"],
+        currentTasks: [
+          { role: "Front-End Developer", task: "Implement interactive features and client-side functionality using JavaScript.", color: "#FFA500" },
+          { role: "Back-End Developer", task: "Develop and maintain server-side functionalities using Node.js.", color: "#008000" },
+          { role: "Quality Assurance", task: "Write test cases and perform quality testing for the website.", color: "#800080" }
+      ],
+    },
+      {
+        name: "Bildad Owuor",
+        specialization: "Frontend Development, Back-End Development, Quality Assurance",
+        assignedRoles: ["Lead CSS (Tailwind) Developer", "Senior React Developer"],
+        currentTasks: [
+          { role: "Lead CSS (Tailwind) Developer", task: "Lead the development of CSS styles using the Tailwind CSS framework.", color: "#FF00FF" },
+          { role: "Senior React Developer", task: "Develop and maintain React components for the website.", color: "#0000FF" }
+      ],
+    },
+      {
+        name: "Awino Emanuel",
+        specialization: "Front-End Development, Back-End Development, UI/UX Design, Quality Assurance",
+        assignedRoles: ["Lead React Developer", "Senior CSS (Tailwind) Developer"],
+        currentTasks: [
+          { role: "Lead React Developer", task: "Lead the development of React components and implement complex functionalities.", color: "#FFD700" },
+          { role: "Senior CSS (Tailwind) Developer", task: "Develop CSS styles using the Tailwind CSS framework.", color: "#800080" }
+      ],
+    },
+      {
+        name: "Bismarck Momanyi",
+        specialization: "Back-End Development",
+        assignedRoles: ["Lead JavaScript Developer", "Associate React Developer"],
+        currentTasks: [
+          { role: "Lead JavaScript Developer", task: "Develop and maintain server-side functionalities using JavaScript.", color: "#008000" },
+          { role: "Associate React Developer", task: "Assist in developing and maintaining React components for the website.", color: "#0000FF" }
+      ],
+    },
+      {
+        name: "Mark Hekima",
+        specialization: "Front-End Development, Graphic Design",
+        assignedRoles: ["Lead CSS Developer", "Associate JavaScript Developer"],
+        currentTasks: [
+          { role: "Lead CSS Developer", task: "Lead the development of CSS styles for the website.", color: "#FF00FF" },
+          { role: "Associate JavaScript Developer", task: "Assist in implementing JavaScript functionality and interactivity on the front-end.", color: "#008000" }
+      ],
+    },
+      {
+        name: "Charlestone Oyoo",
+        specialization: "Project Management, Front-End Development",
+        assignedRoles: ["Project Coordinator", "Financial Coordinator", "Administrative Coordinator"],
+        currentTasks: [
+          { role: "Project Coordinator", task: "Coordinate project timelines and deliverables.", color: "#FFA500" },
+          { role: "Financial Coordinator", task: "Manage project budget and financial aspects.", color: "#008000" },
+          { role: "Administrative Coordinator", task: "Handle administrative tasks and ensure smooth project operations.", color: "#800080" }
+      ],
+    },
+      {
+        name: "Obondo Derick",
+        specialization: "Front-End Development, Back-End Development",
+        assignedRoles: ["Frontend Developer Lead", "Senior JavaScript Developer", "Associate React Developer"],
+        currentTasks: [
+          { role: "Frontend Developer Lead", task: "Lead the development of front-end functionalities and features.", color: "#FFD700" },
+          { role: "Senior JavaScript Developer", task: "Develop JavaScript logic for enhanced interactivity and user experience.", color: "#0000FF" },
+          { role: "Associate React Developer", task: "Assist in developing and maintaining React components for the website.", color: "#0000FF" }
+      ],
+    },
+  /*  {
+      name: "John Doe",
+      specialization: "UI/UX Design, Frontend Development",
+      assignedRoles: ["UI/UX Designer", "Front-End Developer"],
+      currentTasks: [
+        { role: "UI/UX Designer", task: "Create wireframes and design mockups for the website.", color: "#FF1493" },
+        { role: "Front-End Developer", task: "Implement front-end functionality and interactivity using HTML, CSS, and JavaScript.", color: "#FFA500" }
+      ],
+    } */
+  ];
+
+    const roleMapping = {
+      "Front-End Developer": { icon: "<i class='fab fa-react'></i>", color: "#61DAFB" },
+      "Back-End Developer": { icon: "<i class='fab fa-node-js'></i>", color: "#339933" },
+      "Quality Assurance": { icon: "<i class='fas fa-bug'></i>", color: "#FF0000" },
+      "Lead CSS (Tailwind) Developer": { icon: "<i class='fab fa-css3-alt'></i>", color: "#38B2AC" },
+      "Senior React Developer": { icon: "<i class='fab fa-react'></i>", color: "#61DAFB" },
+      "Lead React Developer": { icon: "<i class='fab fa-react'></i>", color: "#61DAFB" },
+      "Senior CSS (Tailwind) Developer": { icon: "<i class='fab fa-css3-alt'></i>", color: "#38B2AC" },
+      "Lead JavaScript Developer": { icon: "<i class='fab fa-js'></i>", color: "#F0DB4F" },
+      "Associate React Developer": { icon: "<i class='fab fa-react'></i>", color: "#61DAFB" },
+      "Lead CSS Developer": { icon: "<i class='fab fa-css3-alt'></i>", color: "#38B2AC" },
+      "Associate JavaScript Developer": { icon: "<i class='fab fa-js'></i>", color: "#F0DB4F" },
+      "Project Coordinator": { icon: "<i class='fas fa-tasks'></i>", color: "#FFA500" },
+      "Financial Coordinator": { icon: "<i class='fas fa-dollar-sign'></i>", color: "#008000" },
+      "Administrative Coordinator": { icon: "<i class='fas fa-tasks'></i>", color: "#800080" },
+      "Frontend Developer Lead": { icon: "<i class='fab fa-react'></i>", color: "#61DAFB" },
+      "Senior JavaScript Developer": { icon: "<i class='fab fa-js'></i>", color: "#F0DB4F" },
+      "UI/UX Designer": { icon: "<i class='fas fa-paint-brush'></i>", color: "#FF1493" },
+    };
+
+    const cardColumns = document.querySelector(".card-columns");
+
+    for (const assignment of roleAssignment) {
+      const { name, specialization, assignedRoles, currentTasks } = assignment;
+      const card = createRoleCard(name, specialization, assignedRoles, currentTasks);
+      cardColumns.appendChild(card);
+    }
+
+    const unassignedRoles = [
+    "Project Manager",
+    "SEO and Digital Marketing",
+    "E-commerce Development",
+    "Machine Learning",
+    "Natural Language Processing",
+    "API Development"
+  ];
+
+    const unassignedRolesContainer = document.getElementById("unassigned-roles");
+    for (const role of unassignedRoles) {
+      const badge = createBadge(role);
+      unassignedRolesContainer.appendChild(badge);
+    }
+
+    function createRoleCard(name, specialization, assignedRoles, currentTasks) {
+      const card = document.createElement("div");
+      card.className = "card mt-4";
+
+      const cardBody = document.createElement("div");
+      cardBody.className = "card-body";
+
+      const cardTitle = document.createElement("h5");
+      cardTitle.className = "card-title";
+      cardTitle.innerHTML = getDeveloperIcon(name) + name;
+
+      const cardSubtitle = document.createElement("h6");
+      cardSubtitle.className = "card-subtitle mb-2 text-muted";
+      cardSubtitle.textContent = specialization;
+
+      const roleList = document.createElement("ul");
+      roleList.className = "list-group list-group-flush";
+
+      for (const role of assignedRoles) {
+        const roleItem = createRoleItem(role, "assigned-role", roleMapping[role].color);
+        roleList.appendChild(roleItem);
+      }
+
+      const taskList = document.createElement("ul");
+      taskList.className = "list-group list-group-flush mt-3";
+
+      for (const { role, task, color } of currentTasks) {
+        const taskItem = createRoleItem(task, "current-task", color);
+        const roleIcon = getRoleIcon(role);
+        taskItem.innerHTML = `${roleIcon} ${task}`;
+        taskList.appendChild(taskItem);
+      }
+
+      cardBody.appendChild(cardTitle);
+      cardBody.appendChild(cardSubtitle);
+      cardBody.appendChild(roleList);
+      cardBody.appendChild(taskList);
+      card.appendChild(cardBody);
+
+      return card;
+    }
+
+    function createRoleItem(content, className, color) {
+      const listItem = document.createElement("li");
+      listItem.className = `list-group-item ${className}`;
+      listItem.innerHTML = content;
+      listItem.style.borderColor = color;
+      return listItem;
+    }
+
+    function createBadge(content) {
+      const badge = document.createElement("span");
+      badge.className = "badge badge-primary badge-pill mx-1";
+      badge.textContent = content;
+      return badge;
+    }
+
+    function getRoleIcon(role) {
+      return roleMapping[role] ? roleMapping[role].icon : "";
+    }
+
+    function getDeveloperIcon(name) {
+      const developerIcons = {
+        "Charles": "<i class='fas fa-user'></i>",
+        "Bildad Owuor": "<i class='fas fa-user'></i>",
+        "Awino Emanuel": "<i class='fas fa-user'></i>",
+        "Bismarck Momanyi": "<i class='fas fa-user'></i>",
+        "Mark Hekima": "<i class='fas fa-user'></i>",
+        "Charlestone Oyoo": "<i class='fas fa-user'></i>",
+        "Obondo Derick": "<i class='fas fa-user'></i>",
+        "John Doe": "<i class='fas fa-user'></i>"
+      };
+
+      return developerIcons[name] || "";
+    }
+  </script>
+ 

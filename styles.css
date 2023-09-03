@@ -11,12 +11,13 @@
     color: darkblue;
   }
 
-/* Add this CSS code to your stylesheet */
     /* Navigation Bar */
     .navbar {
       background-color: #13213D;
       padding: 10px 0;
+      display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     .navbar-brand {
@@ -31,22 +32,24 @@
     }
 
     .logo img {
-      width: 50px; /* Adjust the logo image width as needed */
-      height: auto; /* Maintain the aspect ratio */
+      width: 60px; /* Default logo size */
+      height: auto; /* Maintain aspect ratio */
+      transition: width 0.3s; /* Logo size transition */
     }
 
     .navbar-nav {
       display: flex;
-      flex-wrap: wrap; /* Allow links to wrap to the next line */
-      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
     .navbar-nav .nav-item {
-      margin-right: 20px; /* Add spacing between the links */
+      margin-right: 20px;
     }
 
     .navbar-toggler {
-      display: none; /* Hide the toggler button to keep the links always visible */
+      display: none;
     }
 
     /* Style the navigation links */
@@ -54,10 +57,23 @@
       color: #FFFFFF;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, transform 0.3s; /* Link color and transform (hover) transitions */
     }
 
     .navbar-nav .nav-link:hover {
       color: #FFA500; /* Change the color on hover */
+      transform: scale(1.1); /* Hover animation - increase size */
     }
 
+    /* Media queries for responsive logo sizes */
+    @media (max-width: 768px) {
+      .logo img {
+        width: 40px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .logo img {
+        width: 30px;
+      }
+    }

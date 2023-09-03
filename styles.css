@@ -19,7 +19,7 @@
 
     /* Add padding to the main content to account for the fixed header */
     main {
-      padding-top: 80px; /* Adjust this value as needed based on your header height */
+      padding-top: 150px; /* Adjust this value as needed based on your header height */
     }
 
     /* Navigation Bar */
@@ -47,8 +47,8 @@
     }
 
     .logo img {
-      width: 100px; /* Larger logo size for larger screens */
-      min-height: 50px;
+      width: 150px; /* Larger logo size for larger screens */
+      min-height: 70px;
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */
     }
@@ -87,18 +87,18 @@
     /* Media queries for responsive logo sizes */
     @media (max-width: 1200px) {
       .logo img {
-        width: 60px;
+        width: 100px;
       }
     }
 
     @media (max-width: 768px) {
       .logo img {
-        width: 40px;
+        width: 70px;
       }
     }
 
     @media (max-width: 576px) {
       .logo img {
-        width: 30px;
+        width: 50px;
       }
     }

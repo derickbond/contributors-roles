@@ -10,8 +10,7 @@
   .current-task {
     color: darkblue;
   }
-
-    /* Navigation Bar */
+  /* Navigation Bar */
     .navbar {
       background-color: #13213D;
       padding: 10px 0;
@@ -32,7 +31,7 @@
     }
 
     .logo img {
-      width: 100px; /* Default logo size */
+      width: 80px; /* Larger logo size for larger screens */
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */
     }
@@ -58,6 +57,9 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s, transform 0.3s; /* Link color and transform (hover) transitions */
+      border: 1px solid #FFFFFF; /* Add a border around the links */
+      padding: 5px 10px; /* Add padding to the links for better clickability */
+      border-radius: 5px; /* Rounded corners for the links */
     }
 
     .navbar-nav .nav-link:hover {
@@ -66,6 +68,12 @@
     }
 
     /* Media queries for responsive logo sizes */
+    @media (max-width: 1200px) {
+      .logo img {
+        width: 60px;
+      }
+    }
+
     @media (max-width: 768px) {
       .logo img {
         width: 40px;

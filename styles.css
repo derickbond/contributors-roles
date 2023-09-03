@@ -11,6 +11,17 @@
     color: darkblue;
   }
 
+    /* Set the body to 100vh */
+    body {
+      margin: 0; /* Remove default margin */
+      overflow: auto; /* Enable scrolling if content overflows viewport */
+    }
+
+    /* Add padding to the main content to account for the fixed header */
+    main {
+      padding-top: 80px; /* Adjust this value as needed based on your header height */
+    }
+
     /* Navigation Bar */
     .navbar {
       background-color: #13213D;

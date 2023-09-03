@@ -32,7 +32,7 @@
     }
 
     .logo img {
-      width: 60px; /* Default logo size */
+      width: 100px; /* Default logo size */
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */
     }

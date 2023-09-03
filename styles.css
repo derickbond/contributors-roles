@@ -37,14 +37,13 @@
     }
 
     .logo {
-      display: block;
+      display: flex;
       align-items: center;
       margin-right: 20px;
     }
 
     .logo img {
       width: 120px; /* Larger logo size for larger screens */
-      min-height: 50px;
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */
     }
@@ -87,14 +86,3 @@
       }
     }
 
-    @media (max-width: 768px) {
-      .logo img {
-        width: 70px;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .logo img {
-        width: 50px;
-      }
-    }

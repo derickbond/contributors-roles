@@ -11,19 +11,53 @@
 
 
   <style>
-    /* Add the CSS code here */
-    .navbar-nav {
-      display: flex;
-      align-items: center;
-    }
+    /* Add this CSS code to your stylesheet */
+/* Navigation Bar */
+.navbar {
+  background-color: #13213D;
+  padding: 10px 0;
+}
 
-    .navbar-nav .nav-item {
-      margin-right: 20px;
-    }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
 
-    .navbar-toggler {
-      display: none;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 50px; /* Adjust the logo image width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Add spacing between the links */
+}
+
+.navbar-toggler {
+  display: none; /* Hide the toggler button to keep the links always visible */
+}
+
+/* Style the navigation links */
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFA500; /* Change the color on hover */
+}
   </style>
 </head>
 <body>

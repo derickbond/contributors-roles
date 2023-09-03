@@ -1,14 +1,7 @@
-  // Function to set the body's minimum height
+// Dynamically set the minimum height of the body to ensure it's at least 100vh
     function setBodyMinHeight() {
       const headerHeight = document.querySelector('header').offsetHeight;
-      const windowHeight = window.innerHeight;
-      const body = document.body;
-
-      // Calculate the minimum height (100vh - headerHeight)
-      const minHeight = windowHeight - headerHeight;
-
-      // Set the body's minimum height
-      body.style.minHeight = minHeight + 'px';
+      document.body.style.minHeight = `calc(100vh - ${headerHeight}px)`;
     }
 
     // Call the function on page load and window resize

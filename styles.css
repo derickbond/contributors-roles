@@ -18,6 +18,11 @@
       overflow: auto; /* Enable scrolling if content overflows viewport */
     }
 
+  /* Add padding to the main content to account for the fixed header */
+    main {
+      padding-top: 120px; /* Adjust this value as needed based on your header height */
+    }
+
     /* Navigation Bar */
     .navbar {
       background-color: #13213D;

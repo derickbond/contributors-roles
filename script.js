@@ -1,14 +1,9 @@
-
-  // JavaScript to handle the pop-up navigation
-  const navbarToggler = document.querySelector('.navbar-toggler');
-  const popUpNav = document.querySelector('.pop-up-nav');
-
-  navbarToggler.addEventListener('click', function () {
-    popUpNav.style.display = 'block';
-  });
-
-  popUpNav.addEventListener('click', function (event) {
-    if (event.target === popUpNav) {
-      popUpNav.style.display = 'none';
+ // Dynamically set the minimum height of the body to ensure it's at least 100vh
+    function setBodyMinHeight() {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      document.body.style.minHeight = `calc(100vh - ${headerHeight}px)`;
     }
-  });
+
+    // Call the function on page load and window resize
+    window.addEventListener('load', setBodyMinHeight);
+    window.addEventListener('resize', setBodyMinHeight);

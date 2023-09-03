@@ -20,7 +20,7 @@
 
   /* Add padding to the main content to account for the fixed header */
     main {
-      padding-top: 120px; /* Adjust this value as needed based on your header height */
+      padding-top: 150px; /* Adjust this value as needed based on your header height */
     }
 
     /* Navigation Bar */

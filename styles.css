@@ -41,7 +41,7 @@
     }
 
     .logo {
-      display: flex;
+      display: block;
       align-items: center;
       margin-right: 20px;
     }

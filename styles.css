@@ -1,4 +1,5 @@
-  .card-columns {
+`
+.card-columns {
     column-count: 1;
   }
 
@@ -19,7 +20,7 @@
 
     /* Add padding to the main content to account for the fixed header */
     main {
-      padding-top: 150px; /* Adjust this value as needed based on your header height */
+      padding-top: 100px; /* Adjust this value as needed based on your header height */
     }
 
     /* Navigation Bar */
@@ -47,8 +48,8 @@
     }
 
     .logo img {
-      width: 150px; /* Larger logo size for larger screens */
-      min-height: 70px;
+      width: 120px; /* Larger logo size for larger screens */
+      min-height: 50px;
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */
     }

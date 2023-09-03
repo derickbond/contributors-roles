@@ -31,7 +31,7 @@
     }
 
     .logo img {
-      min-width: 100px; /* Larger logo size for larger screens */
+      width: 100px; /* Larger logo size for larger screens */
       min-height: 50px;
       height: auto; /* Maintain aspect ratio */
       transition: width 0.3s; /* Logo size transition */

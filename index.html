@@ -9,54 +9,92 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
+  <style>
+    /* Add this CSS code to your stylesheet */
+    /* Navigation Bar */
+    .navbar {
+      background-color: #13213D;
+      padding: 10px 0;
+      justify-content: space-between;
+    }
 
-  /* Add this CSS code to your stylesheet */
-/* Navigation Bar */
-.navbar {
-  background-color: #13213D;
-  padding: 10px 0;
-}
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
+    .logo img {
+      width: 50px; /* Adjust the logo image width as needed */
+      height: auto; /* Maintain the aspect ratio */
+    }
 
-.logo img {
-  width: 50px; /* Adjust the logo image width as needed */
-  height: auto; /* Maintain the aspect ratio */
-}
+    .navbar-nav {
+      display: flex;
+      flex-wrap: wrap; /* Allow links to wrap to the next line */
+      align-items: center;
+    }
 
-.navbar-nav {
-  display: flex;
-  align-items: center;
-}
+    .navbar-nav .nav-item {
+      margin-right: 20px; /* Add spacing between the links */
+    }
 
-.navbar-nav .nav-item {
-  margin-right: 20px; /* Add spacing between the links */
-}
+    .navbar-toggler {
+      display: none; /* Hide the toggler button to keep the links always visible */
+    }
 
-.navbar-toggler {
-  display: none; /* Hide the toggler button to keep the links always visible */
-}
+    /* Style the navigation links */
+    .navbar-nav .nav-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-/* Style the navigation links */
-.navbar-nav .nav-link {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    .navbar-nav .nav-link:hover {
+      color: #FFA500; /* Change the color on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logo">
+            <img src="/Obondiumicon.png" alt="Obondium" class="logoicon">
+            <img src="/Obondiumwhite.png" alt="Obondium" class="logo">
+          </div>
+        </a>
+        <!-- Remove the navbar-toggler button to keep the links always visible -->
+        <!-- Add the navbar-collapse class to ensure horizontal links -->
+        <div class="navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Role Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="role-description.html">Role Assignment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guidelines-enforcement.html">Guidelines and Enforcement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="benefits-rewards.html">Benefits and Rewards</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-.navbar-nav .nav-link:hover {
-  color: #FFA500; /* Change the color on hover */
-}
+
   <!-- Main Content -->
   <main class="container">
     <h1 class="mt-5">Welcome to Obondium Workspace!</h1>

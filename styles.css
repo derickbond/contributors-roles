@@ -10,13 +10,18 @@
   .current-task {
     color: darkblue;
   }
-  /* Navigation Bar */
+
+    /* Navigation Bar */
     .navbar {
       background-color: #13213D;
       padding: 10px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed; /* Fix the header at the top of the page */
+      width: 100%; /* Make the header span the full width of the viewport */
+      top: 0; /* Place the header at the top of the viewport */
+      z-index: 1000; /* Ensure the header is on top of other content */
     }
 
     .navbar-brand {
